@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fruits App</title>
+  </head>
+  <body>
+    <h1>Fruits <%= title %> page</h1>
+
+    <ul>
+        <% for(let i = 0; i < allFruits.length; i++) { %>
+        <li>
+            <a href="/fruits/<%= i %>"> <%= allFruits[i].name %></a>
+        </li>
+        <% } %>
+    </ul>
+  </body>
+</html>
